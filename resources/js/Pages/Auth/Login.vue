@@ -1,6 +1,6 @@
 <script setup>
 import Checkbox from '@/Components/BaseInput/Checkbox.vue';
-import GuestLayout from '@/Layouts/GuestLayout.vue';
+import AuthentificationLayout from '@/Layouts/AuthentificationLayout.vue';
 import InputError from '@/Components/BaseInput/InputError.vue';
 import InputLabel from '@/Components/BaseInput/InputLabel.vue';
 import PrimaryButton from '@/Components/BaseInput/PrimaryButton.vue';
@@ -30,7 +30,7 @@ const submit = () => {
 </script>
 
 <template>
-    <GuestLayout>
+    <AuthentificationLayout>
         <Head title="Log in" />
 
         <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
@@ -90,5 +90,5 @@ const submit = () => {
                 </PrimaryButton>
             </div>
         </form>
-    </GuestLayout>
+    </AuthentificationLayout>
 </template>
